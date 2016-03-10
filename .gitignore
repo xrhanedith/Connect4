@@ -11,3 +11,5 @@
 *.lastbuildstate
 *.suo
 *.opendb
+
+Connect4/*
