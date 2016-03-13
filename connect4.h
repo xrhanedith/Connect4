@@ -7,8 +7,8 @@
 void terminalPlay();
 
 // Effects: Lets the user choose whether to start a new game, or load an
-// existing one. Returns the game board. modifies p1 and p2 to be
-// the player names.
+//          existing one. Returns the game board. modifies p1 and p2 to be
+//          the player names.
 // Difficulty: Easy-Medium
 // Topics: Basic/IO, pass by reference, class construction
 Board getBoard(std::string &p1, std::string &p2);
