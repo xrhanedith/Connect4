@@ -1,7 +1,7 @@
 #include "ai.h"
 #include "board.h"
 #include <cstdlib>
-#include <time.h>
+#include <ctime>
 
 int connect4AI(const Board& board){
     // This is the Easy AI. It returns a random column.
