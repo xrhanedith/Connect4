@@ -4,6 +4,7 @@
 #include "board.h"
 
 // This serves as the main function for the Core portion of the project.
+// It is where you will write the menu-driven gameplay for the Core.
 void terminalPlay();
 
 // Effects: Lets the user choose whether to start a new game, or load an

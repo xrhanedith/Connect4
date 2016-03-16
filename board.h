@@ -63,10 +63,11 @@ public:
     // Topics: member functions
     int toMove() const;
 
-    // Note: col represents array index
+    // Modifies: private data members
     // Effects: Makes the move, returning the appropriate result --
     //          IllegalMove, Win, Draw, NoResult. The function itself is
     //          pretty simple, as it uses several helper functions.
+    // Note: parameter col represents array index
     // Difficulty: Easy-Medium
     // Topics: Use of private helper functions
     // Calls: getFirstFreeRow, updateToMove, isBoardFull, isWin
