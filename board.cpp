@@ -9,6 +9,10 @@ Board::Board(const string &fen) {
 void Board::printBoard_as_FENstring(ostream &os) const {
 }
 
+PieceType Board::atLocation(int row, int col) {
+    return data[row][col];
+}
+
 void Board::prettyPrintBoard(ostream &os) const {
 	os << endl;
     for (int row = NUM_ROWS - 1; row >= 0; row--)  {
@@ -30,6 +34,10 @@ void Board::prettyPrintBoard(ostream &os) const {
     os << "     +---+---+---+---+---+---+---+" << endl
        <<"  col  1   2   3   4   5   6   7" << endl;
     return;
+}
+
+PieceType Board::atLocation(int row, int col) {
+    return data[row][col];
 }
 
 int Board::toMove() const {
@@ -63,3 +71,5 @@ int Board::piecesInDirection(int row, int col, int dRow, int dCol) const {
 bool Board::isWin(int row, int col) const {
     return false;
 }
+
+

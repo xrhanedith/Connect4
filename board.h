@@ -1,3 +1,4 @@
+
 #ifndef BOARD_H__
 #define BOARD_H__
 
@@ -57,6 +58,13 @@ public:
     // Difficulty: Super simple since it is already written
     // Topics: array traversal, streams
     void prettyPrintBoard(std::ostream &os) const;
+    
+    //Requires: row and col are >= 0
+    // This one is written for you
+    // Difficulty: Super simple since it is already written
+    // Topics: arrays
+    PieceType atLocation(int row, int col);
+
 
     // Effects: Returns the player to move (1 for player 1, 2 for player 2)
     // Difficulty: Easy
@@ -125,6 +133,8 @@ private:
     // Topics: logic/reading directions
     // Calls: piecesInDirection, 
     bool isWin(int row, int col) const;
+    
+
 
     // Since a board is made up of pieces, this array stores the moves
     PieceType data[NUM_ROWS][NUM_COLS];
